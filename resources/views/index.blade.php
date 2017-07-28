@@ -43,6 +43,6 @@
     </style>
 
 
-
+    @include('services')
     @include('about')
 @endsection
