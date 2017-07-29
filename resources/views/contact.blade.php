@@ -1,4 +1,4 @@
-<div class="" id="contact">
+<div class="" id="contact-main-container">
     <div class="row">
         <h3 class="text-left col-sm-4 col-sm-offset-1" id="contact-title">Contact Us</h3>
     </div>
@@ -8,19 +8,95 @@
 
 
 
-<div id="map"></div>
+<div id="map">
+</div>
+
+<div id="contact-details-container" class="row">
+    {{-- START: Dental Clinic Contact Info --}}
+    <div class="col-sm-5 col-sm-offset-1 text-left">
+
+        <div class="card my-contact-details">
+            <div class="header header-info" id="my-contact-content">
+                <div class="row">
+
+                    <h4 class="col-sm-1"><i class="fa fa-home"></i></h4>
+                    {{--<i class="fa fa-home col-sm-1"></i>--}}
+
+
+                    <h4 class="col-sm-11">Dawes Place Dental Clinic</h4>
+
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <p class="col-sm-1"><i class="fa fa-map-marker"></i></p>
+
+                    <p class="col-sm-11">105-50 Thorncilffe Park Dr<br>
+                        East York, ON<br>
+                        L6E 1V5
+                    </p>
+                </div>
+
+
+
+
+                <div class="row">
+                    <p class="col-sm-1"><i class="fa fa-phone"></i></p>
+
+                    <p class="col-sm-11">(416) 824-8036</p>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <p class="col-sm-1"><i class="fa fa-envelope-open-o"></i></p>
+
+                    <p class="col-sm-11">dawesplace@dental.com</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    {{-- END: Dental Clinic Contact Info --}}
+</div>
+
+
+
+
+
 <script>
     function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var dawes = {lat: 43.6998132, lng: -79.2980773};
+//        43.6998132,-79.2980773
+        var centerLocation = {lat: 43.7003646, lng: -79.3027575};
+//        43.7006377,-79.3004014,17.05
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru,
+            center: centerLocation,
+            zoom: 17,
             scrollwheel: false
         });
         var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
+            position: dawes,
+            map: map,
+            title: 'Dawes Dental'
         });
+
+
+
+        //
+        displayContactDetails();
+    }
+
+
+    function displayContactDetails() {
+        document.getElementById("map").appendChild(document.getElementById("contact-details-container"));
     }
 </script>
 
@@ -33,11 +109,8 @@
 
 
 
-<div class="section text-center" id="contact-details">
-
-
-
-
+<div class="section text-center" id="message-form-container">
+    
 
     {{-- Form --}}
     <div class="row">
@@ -110,65 +183,6 @@
         {{-- END: Email Form --}}
 
 
-
-
-
-
-
-        {{-- START: Dental Clinic Contact Info --}}
-        <div class="col-sm-5 col-sm-offset-1 text-left">
-
-            <div class="card my-contact-details">
-                <div class="header header-info" id="my-contact-content">
-                    <div class="row">
-
-                        <h4 class="col-sm-1"><i class="fa fa-home"></i></h4>
-                        {{--<i class="fa fa-home col-sm-1"></i>--}}
-
-
-                        <h4 class="col-sm-11">Dawes Place Dental Clinic</h4>
-
-                    </div>
-
-
-
-
-
-                    <div class="row">
-                        <p class="col-sm-1"><i class="fa fa-map-marker"></i></p>
-
-                        <p class="col-sm-11">105-50 Thorncilffe Park Dr<br>
-                            East York, ON<br>
-                            L6E 1V5
-                        </p>
-                    </div>
-
-
-
-
-                    <div class="row">
-                        <p class="col-sm-1"><i class="fa fa-phone"></i></p>
-
-                        <p class="col-sm-11">(416) 824-8036</p>
-                    </div>
-
-
-
-
-
-                    <div class="row">
-                        <p class="col-sm-1"><i class="fa fa-envelope-open-o"></i></p>
-
-                        <p class="col-sm-11">dawesplace@dental.com</p>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-        {{-- END: Dental Clinic Contact Info --}}
-
     </div>
 </div>
 
@@ -182,25 +196,28 @@
 
 
 <style>
-    #contact {
-        background-color: rgb(249, 249, 249);
-        padding: 20px 40px;
+    #contact-main-container {
+        background-color: rgb(224, 224, 224);
+        padding: 40px 40px;
+        padding-top: 80px;
         /*padding-bottom: -30px;*/
         /*margin-bottom: -30px;*/
         /*background-color: white;*/
     }
 
-    #contact-details {
-        background-color: white;
+    #message-form-container {
+        background-color: rgb(224, 224, 224);
+
     }
 
     #map {
         margin-top: 0;
-        height: 500px;
+        height: 600px;
         width: 100%;
+        /*opacity: 0.3;*/
     }
 
-    #contact i {
+    #contact-main-container i {
         font-size: 20px;
     }
 
@@ -211,7 +228,7 @@
     }
 
     #email-form .card {
-        box-shadow: 0px 10px 20px rgb(180, 180, 180);
+        box-shadow: 0px 10px 20px rgb(120, 120, 120);
     }
 
     #contact-title {
@@ -221,7 +238,7 @@
     .my-contact-details {
         /*background-color: rgb(249, 249, 249);*/
         box-shadow: none;
-        background-color: white;
+
     }
 
     #my-contact-content {
@@ -241,5 +258,17 @@
 
     #my-contact-content div {
         margin-bottom: 15px;
+    }
+
+    #contact-details-container {
+        /*position: absolute;*/
+        /*z-index: 5;*/
+        /*opacity: 1;*/
+        margin-top: 120px;
+
+    }
+
+    #contact-details-container .card {
+        background-color: rgba(255, 255, 255, 0.0);
     }
 </style>

@@ -1,7 +1,7 @@
-<div class="container-fluid text-left" id="services">
+<div class="container-fluid text-left" id="services-main-container">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="">Our Servies</h2>
+            <h2 id="services-title" class="">Our Servies</h2>
         </div>
 
     </div>

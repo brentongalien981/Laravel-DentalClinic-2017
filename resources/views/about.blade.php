@@ -1,10 +1,10 @@
-<div class="container-fluid" id="about">
+<div class="container-fluid" id="about-main-container">
     <div class="row">
 
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h2>About Us</h2>
+                <h2 id="about-title">About Us</h2>
             </div>
         </div>
 
@@ -57,9 +57,9 @@
 
 
 <style>
-    #about {
+    #about-main-container {
         background-color: white;
-        padding: 100px 25px;
+        padding: 80px 25px;
     }
 
     .par-md {

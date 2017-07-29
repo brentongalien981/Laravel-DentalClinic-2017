@@ -1,6 +1,6 @@
-#services {
+#services-main-container {
     background-color: rgb(249, 249, 249);
-    padding: 100px 40px;
+    padding: 80px 40px;
 }
 
 /*.par-md {*/
@@ -38,7 +38,7 @@
 
 }
 
-#services h2 {
+#services-main-container h2 {
 
     margin-bottom: 50px;
 }

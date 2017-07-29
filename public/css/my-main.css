@@ -9,4 +9,5 @@ html, body {
 #my-wrapper {
     margin: 0;
     padding: 0;
+    /*min-width: 640px;*/
 }

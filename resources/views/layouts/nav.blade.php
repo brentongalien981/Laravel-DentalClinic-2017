@@ -18,13 +18,13 @@
 
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
+                {{--<li>--}}
+                    {{--<a href="#" target="_blank">--}}
+                        {{--Company--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li>
-                    <a href="#" target="_blank">
-                        Company
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
+                    <a href="#services-main-container" target="">
                         Services
                     </a>
                 </li>
@@ -33,7 +33,7 @@
 
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="#about-main-container" target="">
                         About
                     </a>
                 </li>
@@ -42,7 +42,7 @@
 
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="#team-main-container" target="">
                         Team
                     </a>
                 </li>
@@ -50,14 +50,14 @@
 
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="#testimonials-main-container" target="">
                         Testimonials
                     </a>
                 </li>
 
 
                 <li>
-                    <a href="#" target="_blank">Contact</a>
+                    <a href="#contact-main-container" target="">Contact</a>
                 </li>
 
 
