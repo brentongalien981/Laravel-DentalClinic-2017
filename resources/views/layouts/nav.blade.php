@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+<nav class="navbar navbar-info navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     <div class="my-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
@@ -35,6 +35,23 @@
                 <li>
                     <a href="#" target="_blank">
                         About
+                    </a>
+                </li>
+
+
+
+
+                <li>
+                    <a href="#" target="_blank">
+                        Team
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#" target="_blank">
+                        Testimonials
                     </a>
                 </li>
 

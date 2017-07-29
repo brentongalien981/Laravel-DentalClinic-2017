@@ -1,6 +1,16 @@
 <div class="container-fluid" id="about">
     <div class="row">
 
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>About Us</h2>
+            </div>
+        </div>
+
+        <br><br>
+
+
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h3><i class="fa fa-heart-o"></i> Our Mission</h3>
