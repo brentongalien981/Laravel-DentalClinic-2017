@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-info navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+<nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     <div class="my-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
@@ -104,5 +104,9 @@
         color: white;
         padding-top: 11px;
         /*padding-left: 10px;*/
+    }
+
+    .navbar-success {
+        /*opacity: 0.95;*/
     }
 </style>

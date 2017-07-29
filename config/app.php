@@ -228,4 +228,14 @@ return [
 
     ],
 
+
+
+
+
+
+    /**
+     * TODO:SECTION: I added this Google Maps API.
+     */
+
+    'google_maps_api_key' => env('MY_GOOGLE_MAPS_API_KEY', ''),
 ];

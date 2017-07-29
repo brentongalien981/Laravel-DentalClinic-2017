@@ -40,12 +40,12 @@
 
             padding: 170px 25px;
             /*padding-bottom: 250;*/
-            height: 580px;
+            height: 560px;
         }
 
         #my-company-mask {
             width: 100%;
-            height: 580px;
+            height: 560px;
             position: absolute;
             left: 0px;
             top: 0px;
