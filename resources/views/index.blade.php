@@ -49,7 +49,9 @@
         }
 
         #company img {
-            width: 100%;
+            display: inline-block;
+            width: 1280px;
+            /*min-width: 75%;*/
             /*min-width: 640px;*/
             position: absolute;
             /*height: 560px;*/
