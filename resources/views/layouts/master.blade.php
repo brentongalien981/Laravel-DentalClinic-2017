@@ -47,9 +47,12 @@
     <link href="css/my-main.css" rel="stylesheet"/>
 </head>
 
-<body class="index-page">
+{{--<body class="index-page">--}}
+<body class="">
 
-<div class="">
+@include('layouts.nav')
+
+<div id="my-wrapper">
     @yield('index')
 </div>
 

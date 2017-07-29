@@ -19,3 +19,17 @@ Route::get('/', function () {
 Route::get('experiment', function () {
     return view('experiment');
 });
+
+
+Route::get('carousel', function () {
+    return view('carousel');
+});
+
+Route::get('experimentnav', function () {
+    return view('experimentnav');
+});
+
+
+Route::get('materialnav', function () {
+    return view('materialnav');
+});

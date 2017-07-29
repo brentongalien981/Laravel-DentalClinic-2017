@@ -3,11 +3,8 @@
 @section('index')
     <div class="container-fluid text-center" id="company">
         <div class="row">
-            <div class="col-sm-2">
-                &nbsp;
-            </div>
 
-            <div class="col-sm-6 text-left">
+            <div class="col-sm-8 col-sm-offset-1 text-left">
                 <h2>Dawes Place Dental</h2>
 
                 <h4>
@@ -32,11 +29,12 @@
         }
 
         #company {
-            background: #29e557; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(left, #29e557, #41b0ff); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(right, #29e557, #41b0ff); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(right, #29e557, #41b0ff); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to right, #29e557, #41b0ff); /* Standard syntax */
+            /*#29e557*/
+            background: #41b0ff; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, #41b0ff,#29e557); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #41b0ff,#29e557); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #41b0ff,#29e557); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #41b0ff,#29e557); /* Standard syntax */
 
             padding: 150px 25px;
         }
