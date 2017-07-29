@@ -2,34 +2,79 @@
 
 @section('index')
     <div class="container-fluid text-center" id="company">
-        <img class="" src="/img/clinic.jpg">
-
-        <div id="my-company-mask"></div>
 
 
+        <div >
+            <img id="company-banner" class="" src="/img/clinic3.jpg">
 
-        <div id="header-descriptions">
-            <div class="row">
-
-                <div class="col-sm-8 col-sm-offset-1 text-left">
-                    <h2>Dawes Place Dental</h2>
-
-                    <h4>
-                        Dr. Rowena Bucad-Javier<br>
-                        &amp; Associates
-                    </h4>
-                    <button class="btn btn-primary btn-lg">Get in Touch</button>
-                </div>
+            <div id="my-company-mask">
+            </div>
 
 
-                <div class="col-sm-3">
-                    <i class="fa fa-globe my-icons my-icons-lg"></i>
+
+
+            <div id="header-descriptions" class="container container-fluid">
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2 text-left">
+                        <h2 id="company-name">Dawes Place Dental</h2>
+
+                        <h4>
+                            Dr. Rowena Bucad-Javier<br>
+                            &amp; Associates
+                        </h4>
+                        <button class="btn btn-danger btn-sm">Book Now</button>
+                    </div>
+
+
+                    <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2 text-left" id="banner-contact">
+
+                        <div class="row">
+                            <p class="col-sm-1 col-xs-1"><i class="fa fa-map-marker"></i></p>
+
+                            <p class="col-sm-11 col-xs-11">105-50 Thorncilffe Park Dr<br>
+                                East York, ON<br>
+                                L6E 1V5
+                            </p>
+                        </div>
+
+
+
+
+                        <div class="row">
+                            <p class="col-sm-1 col-xs-1"><i class="fa fa-phone"></i></p>
+
+                            <p class="col-sm-11 col-xs-11">(416) 824-8036</p>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p class="col-sm-1 col-xs-1"><i class="fa fa-envelope-open-o"></i></p>
+
+                            <p class="col-sm-11 col-xs-11">dawesplace@dental.com</p>
+                        </div>
+
+
+                    </div>
+
                 </div>
 
             </div>
+
         </div>
 
+
     </div>
+
+
+
+
 
 
     <style>
@@ -43,21 +88,24 @@
 
             background-repeat: no-repeat;
 
-            padding: 170px 25px;
+            /*padding: 170px 25px;*/
+            padding: 0;
             /*padding-bottom: 250;*/
-            height: 560px;
+            /*height: 560px;*/
         }
 
-        #company img {
-            display: inline-block;
-            width: 1280px;
+        #company-banner {
+            /*display: inline-block;*/
+            width: 100%;
+            /*height: 80%;*/
+            /*zoom: 2.0;*/
             /*min-width: 75%;*/
             /*min-width: 640px;*/
-            position: absolute;
+            /*position: absolute;*/
             /*height: 560px;*/
-            left: 0;
-            top: -40px;
-            z-index: -5;
+            /*left: 0;*/
+            /*top: 0px;*/
+            /*z-index: -5;*/
             /*min-height: 560px;*/
             /*margin: 0;*/
             /*padding: 0;*/
@@ -65,12 +113,15 @@
 
         #my-company-mask {
             width: 100%;
-            height: 560px;
+            height: 100%;
+            /*height: 500px;*/
+            /*background-color: red;*/
+            /*height: 560px;*/
             position: absolute;
             left: 0px;
             top: 0px;
-            opacity: 0.5;
-            z-index: 1;
+            opacity: 0.1;
+            /*z-index: 10;*/
 
 
             /*#29e557*/
@@ -85,15 +136,66 @@
         }
 
         #header-descriptions {
+        /*#header-descriptionZ {*/
             position: absolute;
             /*background-color: pink;*/
-            width: 90%;
+            width: 100%;
 
+            left: 0px;
+            top: 0px;
+            /*top: 25%;*/
             margin: 0;
             padding: 0;
-            z-index: 2;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+            /*text-shadow: 0.1px 0.1px 0.1px rgb(150, 150, 150);*/
+            /*z-index: 2;*/
+            /*margin-top: 25%;*/
          }
+
+        /*#header-descriptions h2 {*/
+            /*font-size: 100%;*/
+        /*}*/
+
+
+        #banner-contact {
+            padding-top: 40px;
+            padding-left: 20px;
+        }
     </style>
+
+
+
+
+
+    <script>
+        $(window).resize(function(){
+            $('#my-company-mask').width($('#company-banner').width());
+
+
+
+            $('#my-company-mask').height($('#company-banner').height());
+
+
+//            console.log("$('#company-banner').width()::: " + $('#company-banner').width());
+//            console.log("$('#company-banner').height()::: " + $('#company-banner').height());
+
+            console.log("$('#my-company-mask').width()::: " + $('#my-company-mask').width());
+            console.log("$('#my-company-mask').height()::: " + $('#my-company-mask').height());
+
+
+//            header-descriptions
+            var imgHeight = $('#company-banner').height();
+            imgHeight /= 2;
+
+            $('#header-descriptions').css('top', (imgHeight - 100) + 'px');
+
+//            var companyNameFont = imgHeight / 12;
+//            companyNameFont /= 2;
+////            $('#company-name').css('fontSize', companyNameFont + 'px');
+//            $('#header-descriptions').css('fontSize', companyNameFont + 'px');
+        });
+    </script>
 
 
     @include('services')
