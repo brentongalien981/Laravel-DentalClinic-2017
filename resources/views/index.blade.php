@@ -4,13 +4,11 @@
     <div class="container-fluid text-center" id="company">
 
 
-        <div >
+        <div>
             <img id="company-banner" class="" src="/img/clinic3.jpg">
 
             <div id="my-company-mask">
             </div>
-
-
 
 
             <div id="header-descriptions" class="container container-fluid">
@@ -40,18 +38,11 @@
                         </div>
 
 
-
-
                         <div class="row">
                             <p class="col-sm-1 col-xs-1"><i class="fa fa-phone"></i></p>
 
                             <p class="col-sm-11 col-xs-11">(416) 824-8036</p>
                         </div>
-
-
-
-
-
 
 
                         <div class="row">
@@ -123,20 +114,19 @@
             opacity: 0.1;
             /*z-index: 10;*/
 
-
             /*#29e557*/
             background: #41b0ff; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(left, #41b0ff,#29e557); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(right, #41b0ff,#29e557); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(right, #41b0ff,#29e557); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to right, #41b0ff,#29e557); /* Standard syntax */
+            background: -webkit-linear-gradient(left, #41b0ff, #29e557); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #41b0ff, #29e557); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #41b0ff, #29e557); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #41b0ff, #29e557); /* Standard syntax */
 
             margin: 0px;
             padding: 0px;
         }
 
         #header-descriptions {
-        /*#header-descriptionZ {*/
+            /*#header-descriptionZ {*/
             position: absolute;
             /*background-color: pink;*/
             width: 100%;
@@ -151,12 +141,11 @@
             /*text-shadow: 0.1px 0.1px 0.1px rgb(150, 150, 150);*/
             /*z-index: 2;*/
             /*margin-top: 25%;*/
-         }
+        }
 
         /*#header-descriptions h2 {*/
-            /*font-size: 100%;*/
+        /*font-size: 100%;*/
         /*}*/
-
 
         #banner-contact {
             padding-top: 40px;
@@ -169,9 +158,25 @@
 
 
     <script>
-        $(window).resize(function(){
-            $('#my-company-mask').width($('#company-banner').width());
+        function manageBannerContactDisplay() {
 
+            // If the browser width is less than 770px,
+            // remove the banner-contact.
+            if ($('#my-company-mask').width() <= 770) {
+                $('#banner-contact').css('display', 'none');
+            }
+
+            // .. if it's greater than 770px, show it back..
+            if ($('#my-company-mask').width() > 770) {
+                $('#banner-contact').css('display', 'block');
+            }
+        }
+
+
+        function manageCompanyMaskDisplay() {
+
+            // For the banner mask.
+            $('#my-company-mask').width($('#company-banner').width());
 
 
             $('#my-company-mask').height($('#company-banner').height());
@@ -180,6 +185,8 @@
 //            console.log("$('#company-banner').width()::: " + $('#company-banner').width());
 //            console.log("$('#company-banner').height()::: " + $('#company-banner').height());
 
+
+            // TODO:DEBUG
             console.log("$('#my-company-mask').width()::: " + $('#my-company-mask').width());
             console.log("$('#my-company-mask').height()::: " + $('#my-company-mask').height());
 
@@ -194,7 +201,26 @@
 //            companyNameFont /= 2;
 ////            $('#company-name').css('fontSize', companyNameFont + 'px');
 //            $('#header-descriptions').css('fontSize', companyNameFont + 'px');
+
+        }
+
+
+
+        // Event listeners.
+        $(window).resize(function () {
+
+            manageBannerContactDisplay();
+            manageCompanyMaskDisplay();
         });
+
+
+
+
+
+        // Tasks.
+        manageBannerContactDisplay();
+        manageCompanyMaskDisplay();
+
     </script>
 
 
