@@ -5,9 +5,6 @@
 </div>
 
 
-
-
-
 <div id="map">
 </div>
 
@@ -28,9 +25,6 @@
                 </div>
 
 
-
-
-
                 <div class="row">
                     <p class="col-sm-1"><i class="fa fa-map-marker"></i></p>
 
@@ -41,16 +35,11 @@
                 </div>
 
 
-
-
                 <div class="row">
                     <p class="col-sm-1"><i class="fa fa-phone"></i></p>
 
                     <p class="col-sm-11">(416) 824-8036</p>
                 </div>
-
-
-
 
 
                 <div class="row">
@@ -66,9 +55,6 @@
     </div>
     {{-- END: Dental Clinic Contact Info --}}
 </div>
-
-
-
 
 
 <script>
@@ -89,7 +75,6 @@
         });
 
 
-
         //
         displayContactDetails();
     }
@@ -106,23 +91,20 @@
 </script>
 
 
-
-
-
 <div class="section text-center" id="message-form-container">
-    
+
 
     {{-- Form --}}
     <div class="row">
 
         {{-- START: Email Form --}}
-        <div class="col-sm-4 col-sm-offset-1" id="email-form">
+        <div class="col-md-8 col-md-offset-2" id="email-form">
 
             <div class="card card-signup">
 
                 <form class="form" method="" action="">
                     <div class="header header-success text-center">
-                        <h4>Message Us</h4>
+                        <h4>Message us on</h4>
                         <div class="social-line">
                             <a href="#pablo" class="btn btn-simple btn-just-icon">
                                 <i class="fa fa-facebook-square"></i>
@@ -137,42 +119,69 @@
                     </div>
 
 
-                    <p class="text-divider">or E-mail us</p>
-
+                    <p class="text-divider">or e-mail us</p>
 
 
                     <div class="content">
 
-                        <div class="input-group">
+
+                        <div class="row">
+
+                            {{-- For inputs name, email, and phone. --}}
+                            <div class="col-md-4">
+
+                                <div class="input-group">
 										<span class="input-group-addon">
 											<i class="fa fa-user-circle-o"></i>
 										</span>
-                            <input type="text" class="form-control" placeholder="Name...">
+                                    <input type="text" class="form-control" placeholder="Name...">
+                                </div>
+
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="text" class="form-control" placeholder="Email...">
+                                </div>
+
+
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-mobile-phone"></i></span>
+                                    <input type="tel" placeholder="Phone #..." class="form-control"/>
+                                </div>
+
+
+                                <!-- If you want to add a checkbox to this form, uncomment this code
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="optionsCheckboxes" checked>
+                                        Subscribe to newsletter
+                                    </label>
+                                </div> -->
+
+                            </div>
+
+
+                            {{-- For inputs message. --}}
+                            <div class="col-md-8">
+
+                                <div class="input-group">
+                            <span class="input-group-addon" style="padding-bottom: 34%;">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+
+                                    <textarea class="form-control" placeholder="Here can be your nice text..."
+                                              rows="10"></textarea>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="input-group">
-										<span class="input-group-addon">
-											<i class="fa fa-envelope-o"></i>
-										</span>
-                            <input type="text" class="form-control" placeholder="Email...">
-                        </div>
 
-                        <div class="input-group">
-										<span class="input-group-addon">
-											<i class="fa fa-mobile-phone"></i>
-										</span>
-                            <input type="tel" placeholder="Phone #..." class="form-control"/>
-                        </div>
-
-                        <!-- If you want to add a checkbox to this form, uncomment this code
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="optionsCheckboxes" checked>
-                                Subscribe to newsletter
-                            </label>
-                        </div> -->
                     </div>
+
+
                     <div class="footer text-center">
                         {{--<a href="#pablo" class="btn btn-simple btn-primary btn-lg">Get Started</a>--}}
                         <button class="btn btn-md btn-success">Send</button>
@@ -187,14 +196,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
 <style>
     #contact-main-container {
         background-color: rgb(224, 224, 224);
@@ -207,6 +208,8 @@
 
     #message-form-container {
         background-color: rgb(224, 224, 224);
+        padding-left: 40px;
+        padding-right: 40px;
 
     }
 
