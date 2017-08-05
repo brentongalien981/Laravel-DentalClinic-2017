@@ -22,7 +22,7 @@
                             Dr. Rowena Bucad-Javier<br>
                             &amp; Associates
                         </h4>
-                        <button class="btn btn-danger btn-sm btn-round">Book Now</button>
+                        <button class="btn btn-danger btn-sm">Book Now</button>
                     </div>
 
 

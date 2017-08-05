@@ -15,6 +15,8 @@
 
                 <div class="row">
 
+
+
                     <div class="col-md-5 card-img-container">
                         <!--Card image-->
                         <div class="">
@@ -38,26 +40,13 @@
                             </p>
 
                             <h5 class="text-success service-person">~ Dr. Rowena Javier</h5>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cosmetics-modal">
+                                view more
+                            </button>
                         </div>
                         <!--/.Card content-->
-                    </div>
-
-
-
-                    {{-- Specific services --}}
-                    <div id="cosmetic-specific-services" class="services-card-details col-md-12">
-
-                        <h5>Detailed Services</h5>
-                        <hr>
-
-                        <ul>
-                            <li><a href="#">list item 1</a></li>
-                            <li><a href="#">list item 2</a></li>
-                            <li><a href="#">list item 3</a></li>
-                        </ul>
-                        <hr>
-
-                        <div><a href="#">view all services</a></div>
                     </div>
 
 
@@ -177,6 +166,10 @@
         </div>
     </div>
 </div>
+
+
+{{-- Modals --}}
+@include('sub-services.cosmetics')
 
 
 <link href="/css/services.css" rel="stylesheet">

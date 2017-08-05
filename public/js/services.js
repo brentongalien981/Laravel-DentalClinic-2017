@@ -1,5 +1,7 @@
 // Instance vars.
 var services = document.getElementsByClassName("services-card");
+var subServicesContainers = document.getElementsByClassName("services-card-details");
+
 
 // var theEnterTimeoutHandler = null;
 // var theExitTimeoutHandler = null;
@@ -20,8 +22,11 @@ var count = 0;
 // Hover events.
 for (var i = 0; i < services.length; i++) {
 
-    handleHoverEvents(services[i]);
+    // handleHoverEvents(services[i]);
+
 }
+
+
 
 
 // Functions
@@ -47,6 +52,8 @@ function handleHoverEvents(serviceContainer) {
                     function () {
                         $(theSpecificService).css("visibility", "visible");
                         $(theSpecificService).animate({opacity: "0.9"}, 150);
+
+                        // $(serviceContainer).height($(theSpecificService).height());
                     }, 40
                 );
             });
