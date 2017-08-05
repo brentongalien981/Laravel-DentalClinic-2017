@@ -128,7 +128,7 @@
                         <div class="row">
 
                             {{-- For inputs name, email, and phone. --}}
-                            <div class="col-md-4">
+                            <div class="col-md-12">
 
                                 <div class="input-group">
 										<span class="input-group-addon">
@@ -159,14 +159,9 @@
                                     </label>
                                 </div> -->
 
-                            </div>
-
-
-                            {{-- For inputs message. --}}
-                            <div class="col-md-8">
 
                                 <div class="input-group">
-                            <span class="input-group-addon" style="padding-bottom: 34%;">
+                            <span class="input-group-addon" style="padding-bottom: 23%;">
                                 <i class="fa fa-envelope"></i>
                             </span>
 
@@ -175,6 +170,7 @@
                                 </div>
 
                             </div>
+
 
                         </div>
 
