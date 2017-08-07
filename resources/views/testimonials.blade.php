@@ -331,6 +331,7 @@
     #testimonials-main-container {
         background-color: rgb(249, 249, 249);
         padding: 80px 40px;
+        padding-bottom: 200px;
         /*background-color: rgb(100, 100, 100);*/
         background-color: white;
     }

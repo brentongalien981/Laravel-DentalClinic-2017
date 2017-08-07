@@ -20,6 +20,7 @@
     {{--href="{{ URL::asset('css/masterCss.css') }}"--}}
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/material-kit.css" rel="stylesheet"/>
+    <link href="css/slide-animation.css" rel="stylesheet">
 
 
 
@@ -38,6 +39,9 @@
 
     <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
     <script src="js/material-kit.js" type="text/javascript"></script>
+
+    <script src="js/slide-animation.js" type="text/javascript"></script>
+
 
 
 

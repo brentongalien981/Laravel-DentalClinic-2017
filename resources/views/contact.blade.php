@@ -1,26 +1,39 @@
-<div class="" id="contact-main-container">
-    <div class="row">
-        <h3 class="text-left col-sm-4 col-sm-offset-1" id="contact-title">Contact Us</h3>
-    </div>
-</div>
+{{--<div class="" id="contact-main-container">--}}
+    {{--<div class="row">--}}
+        {{--<h3 class="text-left col-sm-4 col-sm-offset-1" id="contact-title">Contact Us</h3>--}}
+    {{--</div>--}}
+{{--</div>--}}
 
+
+<div id="contact-main-container" class="">
+</div>
 
 <div id="map">
 </div>
 
 <div id="contact-details-container" class="row">
     {{-- START: Dental Clinic Contact Info --}}
-    <div class="col-sm-5 col-sm-offset-1 text-left">
+    <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-left">
 
-        <div class="card my-contact-details">
+        <div class="card my-contact-details slideanim">
             <div class="header header-info" id="my-contact-content">
+
+                <div class="row">
+
+                    {{--<h4 class="col-sm-1 label label-warning"><i class="fa fa-handshake-o"></i></h4>--}}
+
+
+                    <h4 id="contact-us-title" class="col-sm-10 label-danger"><i class="fa fa-handshake-o"></i> Contact Us</h4>
+
+                </div>
+
                 <div class="row">
 
                     <h4 class="col-sm-1"><i class="fa fa-home"></i></h4>
                     {{--<i class="fa fa-home col-sm-1"></i>--}}
 
 
-                    <h4 class="col-sm-11">Dawes Place Dental Clinic</h4>
+                    <h4 class="col-sm-10">Dawes Place Dental Clinic</h4>
 
                 </div>
 
@@ -28,7 +41,7 @@
                 <div class="row">
                     <p class="col-sm-1"><i class="fa fa-map-marker"></i></p>
 
-                    <p class="col-sm-11">105-50 Thorncilffe Park Dr<br>
+                    <p class="col-sm-10">105-50 Thorncilffe Park Dr<br>
                         East York, ON<br>
                         L6E 1V5
                     </p>
@@ -38,14 +51,14 @@
                 <div class="row">
                     <p class="col-sm-1"><i class="fa fa-phone"></i></p>
 
-                    <p class="col-sm-11">(416) 824-8036</p>
+                    <p class="col-sm-10">(416) 824-8036</p>
                 </div>
 
 
                 <div class="row">
                     <p class="col-sm-1"><i class="fa fa-envelope-open-o"></i></p>
 
-                    <p class="col-sm-11">dawesplace@dental.com</p>
+                    <p class="col-sm-10">dawesplace@dental.com</p>
                 </div>
 
 
@@ -98,13 +111,13 @@
     <div class="row">
 
         {{-- START: Email Form --}}
-        <div class="col-md-8 col-md-offset-2" id="email-form">
+        <div class="col-md-10 col-md-offset-1" id="email-form">
 
-            <div class="card card-signup">
+            <div class="card card-signup slideanim">
 
                 <form class="form" method="" action="">
                     <div class="header header-success text-center">
-                        <h4>Message us on</h4>
+                        <h3>Message us on</h3>
                         <div class="social-line">
                             <a href="#pablo" class="btn btn-simple btn-just-icon">
                                 <i class="fa fa-facebook-square"></i>
@@ -194,24 +207,27 @@
 
 <style>
     #contact-main-container {
-        background-color: rgb(224, 224, 224);
-        padding: 40px 40px;
-        padding-top: 80px;
+        /*background-color: lavenderblush;*/
+        padding: 0px 40px;
+        /*padding-top: 80px;*/
         /*padding-bottom: -30px;*/
         /*margin-bottom: -30px;*/
         /*background-color: white;*/
     }
 
     #message-form-container {
-        background-color: rgb(224, 224, 224);
-        padding-left: 40px;
-        padding-right: 40px;
+        /*background-color: rgb(224, 224, 224);*/
+        /*background-color: rgb(250, 250, 250);*/
+        background-color: rgb(244, 255, 245);
+        padding: 150px 40px;
+        /*padding-left: 40px;*/
+        /*padding-right: 40px;*/
 
     }
 
     #map {
         margin-top: 0;
-        height: 600px;
+        height: 700px;
         width: 100%;
         /*opacity: 0.3;*/
     }
@@ -241,14 +257,15 @@
     }
 
     #my-contact-content {
+        /*left: 0px;*/
         width: 100%;
         padding: 30px 30px;
-    }
-
-    #my-contact-content {
         font-weight: 100;
         font-size: 14px;
+        /*margin-right: 100px;*/
     }
+
+
 
     #my-contact-content h4 {
         font-size: 24px;
@@ -263,11 +280,20 @@
         /*position: absolute;*/
         /*z-index: 5;*/
         /*opacity: 1;*/
-        margin-top: 120px;
+        margin-top: 80px;
+        /*margin-left: 0px;*/
 
     }
 
     #contact-details-container .card {
         background-color: rgba(255, 255, 255, 0.0);
+    }
+
+    #contact-us-title {
+        padding: 5px 40px;
+        border-radius: 13px;
+        margin-left: 10px;
+        background-color: white;
+        color: blue;
     }
 </style>

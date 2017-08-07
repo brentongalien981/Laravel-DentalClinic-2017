@@ -229,4 +229,5 @@
     @include('team')
     @include('testimonials')
     @include('contact')
+    @include('footer')
 @endsection

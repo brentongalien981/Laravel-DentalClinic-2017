@@ -11,7 +11,7 @@
         <div class="col-md-10 col-md-offset-1">
 
 
-            <div id="cosmetic-service" class="card services-card">
+            <div id="cosmetic-service" class="card services-card slideanim">
 
                 <div class="row">
 
@@ -55,7 +55,7 @@
             </div>
 
 
-            <div id="implant-service" class="card services-card">
+            <div id="implant-service" class="card services-card slideanim">
 
                 <div class="row">
 
@@ -81,34 +81,22 @@
                                 card's content.</p>
 
                             <h5 class="text-info service-person">~ Dr. Lea Bucad</h5>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#implant-modal">
+                                view more
+                            </button>
                         </div>
                         <!--/.Card content-->
                     </div>
 
-
-
-                    {{-- Specific services --}}
-                    <div id="implant-specific-services" class="services-card-details col-md-12">
-
-                        <h5>Detailed Services</h5>
-                        <hr>
-
-                        <ul>
-                            <li><a href="#">list item 1</a></li>
-                            <li><a href="#">list item 2</a></li>
-                            <li><a href="#">list item 3</a></li>
-                        </ul>
-                        <hr>
-
-                        <div><a href="#">view all services</a></div>
-                    </div>
 
                 </div>
 
             </div>
 
 
-            <div id="restoration-service" class="card services-card">
+            <div id="restoration-service" class="card services-card slideanim">
 
                 <div class="row">
 
@@ -137,26 +125,15 @@
 
                             <h5 class="text-danger service-person">~ CEO Dexter Javier</h5>
 
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#restoration-modal">
+                                view more
+                            </button>
+
                         </div>
                         <!--/.Card content-->
                     </div>
 
-
-                    {{-- Specific services --}}
-                    <div id="restoration-specific-services" class="services-card-details col-md-12">
-
-                        <h5>Detailed Services</h5>
-                        <hr>
-
-                        <ul>
-                            <li><a href="#">list item 1</a></li>
-                            <li><a href="#">list item 2</a></li>
-                            <li><a href="#">list item 3</a></li>
-                        </ul>
-                        <hr>
-
-                        <div><a href="#">view all services</a></div>
-                    </div>
 
                 </div>
 
@@ -170,6 +147,7 @@
 
 {{-- Modals --}}
 @include('sub-services.cosmetics')
+@include('sub-services.implant')
 
 
 <link href="/css/services.css" rel="stylesheet">

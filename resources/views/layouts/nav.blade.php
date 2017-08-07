@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-info navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+<nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     <div class="my-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">

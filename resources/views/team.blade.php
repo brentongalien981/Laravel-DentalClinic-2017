@@ -4,8 +4,9 @@
     <div class="team">
 
         <div class="row">
+
             <div class="col-md-4">
-                <div class="team-player">
+                <div class="team-player slideanim-slow">
                     <img src="/img/dexter.jpg" alt="Thumbnail Image" class="img-raised img-circle">
                     <h4 class="title">Dexter Javier<br />
                         <small class="text-muted">Owner, CEO</small>
@@ -21,7 +22,7 @@
 
 
             <div class="col-md-4">
-                <div class="team-player">
+                <div class="team-player slideanim">
                     <img src="/img/rowena.jpg" alt="Thumbnail Image" class="img-raised img-circle">
                     <h4 class="title">Dr. Rowena Bucad-Javier<br />
                         <small class="text-muted">Owner, Head Doctor</small>
@@ -40,7 +41,7 @@
 
 
             <div class="col-md-4">
-                <div class="team-player">
+                <div class="team-player slideanim-slower">
                     <img src="/img/lea.jpg" alt="Thumbnail Image" class="img-raised img-circle">
                     <h4 class="title">Dr. Lea Bucad<br />
                         <small class="text-muted">Dentist</small>

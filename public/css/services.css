@@ -108,6 +108,7 @@
 img.sub-services-icons {
     width: 2%;
     margin-right: 10px;
+    padding-bottom: 3px;
 }
 
 
@@ -117,6 +118,11 @@ img.sub-services-icons {
 
 .sub-services-details {
     margin-left: 20px;
+    font-weight: 100;
+}
+
+.sub-services-details h3 {
+    color: black;
 }
 
 .sub-services-links {
