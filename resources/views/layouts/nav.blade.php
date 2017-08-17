@@ -63,6 +63,12 @@
 
 
                 <li>
+                    <a href="#" target="">Store</a>
+                </li>
+
+
+
+                <li>
                     <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/"
                        target="_blank" class="btn btn-white btn-simple btn-just-icon">
                         <i class="fa fa-twitter"></i>

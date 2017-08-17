@@ -43,18 +43,18 @@
                                     <div class="row">
 
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <img src="/img/examples/chris1.jpg" class="img-rounded">
-                                            <img src="/img/examples/chris0.jpg" class="img-rounded">
+                                            <img src="/img/dental-selfie3.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/staff4.jpg" class="img-rounded">
                                             {{--<img src="/img/examples/chris6.jpg" class="img-rounded">--}}
                                         </div>
 
                                         <div class="col-sm-4">
-                                            <img src="/img/examples/chris3.jpg" class="img-rounded">
-                                            <img src="/img/examples/chris4.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/dentist1.jpg" class="img-rounded">
+                                            <img src="/img/dental-selfie.jpg" class="img-rounded">
                                         </div>
 
                                         <div class="col-sm-3">
-                                            <img src="/img/examples/chris5.jpg" class="img-rounded">
+                                            <img src="/img/dental-selfie2.jpg" class="img-rounded">
                                             {{--<img src="/img/examples/chris7.jpg" class="img-rounded">--}}
 
                                             <div class="testimonial-text-container">
@@ -75,7 +75,7 @@
                                                     Booker</h5>
                                             </div>
 
-                                            <img src="/img/examples/chris9.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/dentist4.jpg" class="img-rounded">
                                         </div>
 
                                         {{--<div class="col-sm-3">--}}
@@ -130,12 +130,12 @@
                                                 <h5 class="testimonial-text" style="font-style: italic">~ Celedonio
                                                     Booker</h5>
                                             </div>
-                                            <img src="/img/examples/chris0.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/dentist6.jpg" class="img-rounded">
                                             {{--<img src="/img/examples/chris6.jpg" class="img-rounded">--}}
                                         </div>
 
                                         <div class="col-sm-3">
-                                            <img src="/img/examples/chris5.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient5.jpg" class="img-rounded">
 
                                             <div class="testimonial-text-container">
                                                 <h4 class="testimonial-text">Awesome service!</h4>
@@ -157,12 +157,12 @@
                                                     Booker</h5>
                                             </div>
 
-                                            <img src="/img/examples/chris9.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/service3.jpg" class="img-rounded">
                                         </div>
 
                                         <div class="col-sm-3">
-                                            <img src="/img/examples/chris3.jpg" class="img-rounded">
-                                            <img src="/img/examples/chris4.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/service7.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/service4.jpg" class="img-rounded">
                                         </div>
 
 
@@ -204,7 +204,7 @@
                                     <div class="row">
 
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <img src="/img/examples/chris1.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/staff2.jpg" class="img-rounded">
 
                                             <div class="testimonial-text-container">
                                                 <h4 class="testimonial-text">The staff is super accomodating</h4>
@@ -241,15 +241,15 @@
                                         </div>
 
                                         <div class="col-sm-3">
-                                            <img src="/img/examples/chris3.jpg" class="img-rounded">
-                                            <img src="/img/examples/chris4.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/staff3.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/service5.jpg" class="img-rounded">
                                         </div>
 
                                         <div class="col-sm-4">
-                                            <img src="/img/examples/chris5.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/staff5.jpg" class="img-rounded">
 
 
-                                            <img src="/img/examples/chris9.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/staff6.jpg" class="img-rounded">
                                         </div>
                                     </div>
 
@@ -265,13 +265,14 @@
                                     <div class="row">
 
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <img src="/img/examples/chris1.jpg" class="img-rounded">
-                                            <img src="/img/examples/chris8.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient1.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient4.jpg" class="img-rounded">
 
                                         </div>
 
                                         <div class="col-sm-4">
-                                            <img src="/img/examples/chris3.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/dentist5.jpg" class="img-rounded">
 
                                             <div class="testimonial-text-container" style="background-color: lightsalmon">
                                                 <h4 class="testimonial-text">I was so confident..</h4>
@@ -292,12 +293,12 @@
                                         </div>
 
                                         <div class="col-sm-3">
-                                            <img src="/img/examples/chris5.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/dentist2.jpg" class="img-rounded">
 
 
-                                            <img src="/img/examples/chris9.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient8.jpg" class="img-rounded">
 
-                                            <img src="/img/examples/chris7.jpg" class="img-rounded">
+                                            <img src="/img/TestimonialPhotos/patient7.jpg" class="img-rounded">
                                         </div>
                                     </div>
 
